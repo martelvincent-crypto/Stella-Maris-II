@@ -1,0 +1,17 @@
+{
+  "name": "Stella Maris — Prier avec l\u2019\u00c9glise",
+  "short_name": "Stella Maris",
+  "description": "Rosaire m\u00e9dit\u00e9 et tr\u00e9sor des pri\u00e8res de l\u2019\u00c9glise, latin et fran\u00e7ais.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f2ede2",
+  "theme_color": "#f2ede2",
+  "lang": "fr",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
