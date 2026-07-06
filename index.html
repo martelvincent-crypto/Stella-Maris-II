@@ -24,7 +24,7 @@
   --bg:#f2ede2;--bg-deep:#e9e0cc;--glow:#faf6ec;
   --text:#1d1a16;--text-strong:#13233f;
   --acc:#9b1c1f;--acc-strong:#7e1517;--on-acc:#f8f2e4;
-  --sub:#414f72;
+  --sub:#414f72;--brand:#9b1c1f;
   --overlay-rgb:19,26,47;--bg-rgb:242,237,226;--acc1-rgb:155,28,31;--acc2-rgb:19,35,63;
   --serif:"EB Garamond","Cormorant Garamond",Georgia,"Palatino Linotype",serif;
   --display:"Cormorant Garamond",Georgia,serif;
@@ -190,7 +190,7 @@ body.nuit{
   --bg:#13233f;--bg-deep:#0d1830;--glow:#2a3f63;
   --text:#f8f2e4;--text-strong:#fffdf8;
   --acc:#dcb968;--acc-strong:#c39a4d;--on-acc:#0d1830;
-  --sub:#e7d4a6;
+  --sub:#e7d4a6;--brand:#d0544a;
   --overlay-rgb:255,253,248;--bg-rgb:19,35,63;--acc1-rgb:195,154,77;--acc2-rgb:220,185,104;
 }
 
@@ -336,6 +336,9 @@ body.nuit .logo{background-color:var(--acc)}
 /* perles de navigation : pastille sur fond, jamais noyées dans le texte */
 .beads{bottom:calc(env(safe-area-inset-bottom,0px) + 12px);background:rgba(var(--bg-rgb),.92);
   padding:.45rem .7rem;border-radius:100px;border:1px solid rgba(var(--acc2-rgb),.25)}
+
+/* titre d’accueil en rouge */
+h1.brand{color:var(--brand)}
 </style>
 </head>
 <body>
@@ -973,7 +976,7 @@ PRIERES.push(
 );
 
 /* ordre des catégories dans l'index */
-const PR_CATS=["Prières fondamentales","À Notre-Seigneur Jésus-Christ","À l’Esprit Saint","À la Sainte Trinité","À la Vierge Marie","Aux anges et aux saints","Padre Pio","Cantiques et hymnes","Psaumes","Litanies"];
+const PR_CATS=["Padre Pio","Prières fondamentales","À Notre-Seigneur Jésus-Christ","À l’Esprit Saint","À la Sainte Trinité","À la Vierge Marie","Aux anges et aux saints","Cantiques et hymnes","Psaumes","Litanies"];
 
 /* retraits demandés : prières récitées par cœur, superflues dans le trésor */
 ["signum","gloria_patri","pater","credo_ap","ave"].forEach(id=>{
